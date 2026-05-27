@@ -35,7 +35,9 @@ function BookRatingForm({
       // eslint-disable-next-line no-underscore-dangle
       setBook({ ...update, id: update._id });
     } else {
-      alert(update);
+      // Affichage de l'erreur en console si la notation échoue.
+      // eslint-disable-next-line no-console
+      console.error('Erreur lors de la notation :', update);
     }
   };
   return (
